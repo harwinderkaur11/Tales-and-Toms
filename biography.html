@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Biography Books
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        body{
+            background: linear-gradient(to right, #664229, white,#664229);;
+        }
+        .book-grid{
+            display: flex;
+            flex-wrap:wrap ;
+            column-count: 4;
+            padding: 20px;
+            gap: 40px;
+            justify-content: space-between;
+        }
+        .book-card{
+            width: 250px;
+            height: 300px;
+            background-color: #ebe6df;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-color:#664229;
+            border-width: 10px;     
+        }
+        .book-card img{
+            width: 100px;
+            height: 150px;
+            transform: scale(1.2);
+            transition: 1s;
+
+        }
+        .book-card img :hover{
+            transform :scale(1.5);
+            transition: 0.5sec;
+        }
+        button{
+            border: solid; 
+            color: #664229;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            transform: scale(1.1);
+            transition: 1s;
+
+        }
+        .book{
+            font-size: xx-large;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+            color: #664229;
+            text-align: center;
+        }
+</style>
+    </head>
+    <body>
+        <section id="biography_books"></section>
+<h1 class="book">Biography Books</h1>
+<div class="book-grid">
+    <div class="book-card">
+       <a href="stevejobs.html"> <img src="https://m.media-amazon.com/images/I/81NSb9Jy0HL._AC_UF1000,1000_QL80_.jpg " alt=""></a>
+        <h3>Steve Jobs </h3>
+        <p>By Walter Isaacson</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="thediaryofayounggirl.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyfqAf6PRoNFcchlKabOAQn1u0Q7VP3NgKjg&s " alt=""> </a>
+        <h3>The Diary of a Young Girl </h3>
+        <p>By Anne Frank</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="becoming.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYfigG9TcV9ZMCj0n9SLXl1XuU6WVMMCvXLA&s " alt=""></a>
+        <h3>Becoming </h3>
+        <p>By Michelle Obama</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="alexanderhamilton.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt8hHqJNTzdOV3dBZd5cypnWloyJaKNNJP7g&s " alt=""></a>
+        <h3>Alexander Hamilton </h3>
+        <p>By Ron Chernow</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="theglasscastle.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqM4BnrUA82P2UnAuWXpRIKb6w7bDi5PIIQ&s" alt=""></a>
+        <h3>The Glass Castle </h3>
+        <p>By Jeannette Walls</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="autobiographyofmalcomx.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqPfDc7SPbLmE8s5jBOkUal-cw95XfYdPWrQ&s " alt=""> </a>
+        <h3>The Autobiography of Malcolm X</h3>
+        <p>By Malcolm X and Alex Haley</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp; Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="longwalktofreedom.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU8zAOMtNJP4OrAVD_3O2ndRpcQsiBRSaL3g&s" alt=""></a>
+        <h3>Long Walk to Freedom </h3>
+        <p>By Nelson Mandela</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="educated.html"><img src="https://m.media-amazon.com/images/I/71-4MkLN5jL._AC_UF1000,1000_QL80_.jpg " alt=""></a>
+        <h3>Educated</h3>
+        <p> By Tara Westover</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="iknowwhythecagedbirdsings.html"><img src="https://m.media-amazon.com/images/I/81cz661vrGL._AC_UF1000,1000_QL80_.jpg " alt=""></a>
+        <h3>I Know Why the Caged Bird Sings </h3>
+        <p>By Maya Angelou</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="bornacrimestoriesfromasouthafricanchildhood.html"><img src="https://m.media-amazon.com/images/I/91shjDQ3TBL._AC_UF1000,1000_QL80_.jpg" alt=""></a>
+        <h3>Born a Crime: Stories from a South African Childhood </h3>
+        <p>By Trevor Noah</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="einsteinhisiifeanduniverse.html"><img src="https://m.media-amazon.com/images/I/81yRfpl9fzL._AC_UF1000,1000_QL80_.jpg" alt=""></a>
+        <h3> Einstein: His Life and Universe </h3>
+        <p>By Walter Isaacson </p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="thestoryofmyexperimentswithtruth.html"><img src="https://m.media-amazon.com/images/I/61Q3PvMKEkL._AC_UF1000,1000_QL80_.jpg" alt=""></a>
+        <h3> The Story of My Experiments with Truth </h3>
+        <p> By Mahatma Gandhi </p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp; Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="fridaabiographyoffridakahlo.html"><img src=" https://m.media-amazon.com/images/I/81ii4fiFEAL._AC_UF1000,1000_QL80_.jpg" alt=""> </a>
+        <h3> Frida: A Biography of Frida Kahlo  </h3>
+        <p>By Hayden Herrera </p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="justasiam.html"><img src="https://m.media-amazon.com/images/I/91dtXDJWSKL._AC_UF1000,1000_QL80_.jpg" alt=""></a>
+        <h3> Just as I Am </h3>
+        <p>By Cicely Tyson</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp; Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="amoveablefeast.html"><img src="https://m.media-amazon.com/images/I/61KiwSu7+lL._AC_UF1000,1000_QL80_.jpg" alt=""></a>
+        <h3>A Moveable Feast  </h3>
+        <p>By Ernest Hemingway</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="ratantata.html"><img src="https://m.media-amazon.com/images/I/719oHU9kiFL._SY342_.jpg" alt=""></a>
+        <h3>Ratan Tata  </h3>
+        <p>By Thomas Mathew</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp; Wishlist</button>
+    </div>
+</div>
+</section>
+    </body>
+</html>

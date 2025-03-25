@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Sign Up - Tales and Tomes</title>
+    <link rel="stylesheet" href="sign in-up.css">
+    <style>
+
+        input.invalid {
+            border: 2px solid red;
+        }
+
+        input.valid {
+            border: 2px solid green;
+        }
+
+        small.error {
+            color: red;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .input-wrapper {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('signup-form');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const phoneInput = document.getElementById('phone');
+            const dobInput = document.getElementById('dob');
+            const passwordInput = document.getElementById('password');
+            const confirmInput = document.getElementById('confirm-password');
+
+            function showError(input, message) {
+                const errorElement = document.createElement('small');
+                errorElement.classList.add('error');
+                errorElement.innerText = message;
+
+                const parent = input.parentElement;
+                const existingError = parent.querySelector('.error');
+                if (existingError) {
+                    existingError.remove();
+                }
+
+                parent.insertBefore(errorElement, input);
+                input.classList.add('invalid');
+                input.classList.remove('valid');
+            }
+
+            function removeError(input) {
+                const errorElement = input.parentElement.querySelector('.error');
+                if (errorElement) {
+                    errorElement.remove();
+                }
+                input.classList.remove('invalid');
+                input.classList.add('valid');
+            }
+
+            nameInput.addEventListener('focus', function () {
+                showError(nameInput, 'Name is required.');
+            });
+
+            nameInput.addEventListener('input', function () {
+                if (nameInput.value.trim().length < 3) {
+                    showError(nameInput, 'Name must be at least 3 characters long.');
+                } else {
+                    removeError(nameInput);
+                }
+            });
+
+            emailInput.addEventListener('focus', function () {
+                showError(emailInput, 'Email is required.');
+            });
+
+            emailInput.addEventListener('input', function () {
+                const emailPattern = /\S+@\S+\.\S+/;
+                if (!emailPattern.test(emailInput.value)) {
+                    showError(emailInput, 'Please enter a valid email address.');
+                } else {
+                    removeError(emailInput);
+                }
+            });
+
+            phoneInput.addEventListener('focus', function () {
+                showError(phoneInput, 'Phone number is required.');
+            });
+
+            phoneInput.addEventListener('input', function () {
+                const phonePattern = /^[0-9]{10}$/;
+                if (!phonePattern.test(phoneInput.value)) {
+                    showError(phoneInput, 'Phone number must be 10 digits.');
+                } else {
+                    removeError(phoneInput);
+                }
+            });
+
+            dobInput.addEventListener('focus', function () {
+                showError(dobInput, 'Date of birth is required.');
+            });
+
+            dobInput.addEventListener('focus', function () {
+                showError(dobInput, 'Date of birth is required.');
+            });
+
+            dobInput.addEventListener('input', function () {
+                const dob = new Date(dobInput.value);
+                const today = new Date();
+
+                let age = today.getFullYear() - dob.getFullYear();
+
+                const hasBirthdayPassed = today.getMonth() > dob.getMonth() || (today.getMonth() === dob.getMonth() && today.getDate() >= dob.getDate());
+
+                if (!hasBirthdayPassed) {
+                    age--;
+                }
+
+                if (age < 18) {
+                    showError(dobInput, 'You must be at least 18 years old.');
+                } else {
+                    removeError(dobInput);
+                }
+            });
+
+            passwordInput.addEventListener('focus', function () {
+                showError(passwordInput, 'Password is required.');
+            });
+
+            passwordInput.addEventListener('input', function () {
+                const password = passwordInput.value;
+                const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+{}|:"<>?]).{6,}$/;
+                if (password.length < 6) {
+                    showError(passwordInput, 'Password must be at least 6 characters long.');
+                } else if (!passwordPattern.test(password)) {
+                    showError(passwordInput, 'Password must contain at least one number and one special character.');
+                } else {
+                    removeError(passwordInput);
+                }
+            });
+
+            confirmInput.addEventListener('input', function () {
+                if (confirmInput.value !== passwordInput.value) {
+                    showError(confirmInput, 'Passwords do not match');
+                } else {
+                    removeError(confirmInput);
+                }
+            });
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (form.querySelectorAll('.invalid').length === 0) {
+                    alert('Form Submitted Successfully!');
+                    window.location.href = 'Sign in.html';  
+                } else {
+                    alert('Please fix the errors before submitting.');
+                }
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Tales and Tomes</h1>
+        </header>
+
+        <div class="form-container">
+            <div class="form-wrapper">
+                <form id="signup-form">
+                    <h2>
+                        <center>Sign Up</center>
+                    </h2>
+                    <div class="input-wrapper">
+                        <label for="name">Name:</label>
+                        <div id="name-error" class="error-message"></div>
+                        <input type="text" id="name" name="name" required>
+
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email">Email:</label>
+                        <div id="email-error" class="error-message"></div>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="phone">Phone Number:</label>
+                        <div id="phone-error" class="error-message"></div>
+                        <input type="number" id="phone" name="phone" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="dob">Date of Birth:</label>
+                        <div id="date-error" class="error-message"></div>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="password">Set Password:</label>
+                        <div id="password-error" class="error-message"></div>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="password">Confirm Password:</label>
+                        <div id="confirm-password-error" class="error-message"></div>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                    <p>Already have an account? <a href="Sign In.html">Sign In</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

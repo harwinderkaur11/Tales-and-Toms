@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>And Then There Were None</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/71pOMFWk7sL._AC_UF1000,1000_QL80_.jpg" alt="And Then There Were None">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">And Then There Were None</h1>
+            <p class="book-author">By Agatha Christie</p>
+            <p class="book-rating">★★★★★</p>
+            <p class="book-description">A classic mystery novel where ten strangers are invited to a remote island, only to find themselves being picked off one by one.</p>
+            <div class="book-info">
+                <p><strong>Price :</strong> ₹499</p>
+                <p><strong>Genre :</strong> Mystery, Thriller</p>
+                <p><strong>Published :</strong> 1939</p>
+                <p><strong>Publisher : </strong> Collins Crime Club</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>John Smith</strong></p>
+            <p>An absolute classic! Agatha Christie does it again with this twist-filled mystery that keeps you guessing until the very end. Highly recommended for anyone who loves a good thriller.</p>
+        </div>
+        <div class="review">
+            <p><strong>Emily Davis</strong></p>
+            <p>This novel is a must-read for fans of suspense. The mystery is cleverly crafted and the plot keeps you on edge. It’s one of my all-time favorites!</p>
+        </div>
+    </div>
+</body>
+</html>

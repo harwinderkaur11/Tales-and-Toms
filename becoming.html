@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Becoming</title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/71-4MkLN5jL._AC_UF1000,1000_QL80_.jpg " alt="Educated">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Becoming</h1>
+            <p class="book-author">By Michelle Obama</p>
+            <p class="book-rating">★★★★☆ (4.5/5)</p>
+            <p class="book-description">
+                Becoming by Michelle Obama is a deeply personal memoir that chronicles her journey from a modest upbringing on the South Side of Chicago to becoming the First Lady of the United States. Michelle Obama shares her experiences growing up in a close-knit family, her education at Princeton University and Harvard Law School, and her early career as a lawyer.
+                <div class="book-info">
+                <p><strong>Price : ₹1199.00</strong> </p>
+                <p><strong>Genre : Non-Fiction</strong> </p>
+                <p><strong>Published : 2018</strong> </p>
+                <p><strong>Publisher : Viking Press</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="removeQuantity()">-</button>
+            <span id="count">0</span>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity();">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button" onclick="updateQuantity();"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlistButton animation"><i class="fa-regular fa-heart heartIcon"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Raghav</strong></p>
+            <p>The material has a glossy finish, but the breadth of the cover was shorter than that of the pages. So the book’s front didn’t fully cover the pages and that makes the book look a little unappealing.</p>
+        </div>
+        <div class="review">
+            <p><strong>Rohit</strong></p>
+            <p> This book is a must read. The way Tara has overcome her limitations and her beliefs to become EDUCATED is an example of how it is possible with your determination and grit to overcome your difficult past and break barriers to achieve your dreams.</p>
+            </div>
+    </div>
+    <script>
+        const filter = document.getElementById('count');
+        var counter = 0;
+        function updateQuantity(){
+            counter++;
+            filter.textContent = counter;
+        }
+        function removeQuantity(){
+            counter--;
+            filter.textContent = counter;
+        }
+        
+        
+       
+    const wishlistButtons = document.querySelectorAll('.wishlistButton');
+    
+    wishlistButtons.forEach(button => {
+        const heartIcon = button.querySelector('.heartIcon');
+        
+        button.addEventListener('mouseover', () => {
+            button.classList.add('hovered'); 
+        });
+    
+        button.addEventListener('mouseout', () => {
+            button.classList.remove('hovered'); 
+        });
+    
+        button.addEventListener('mousedown', () => {
+            button.classList.add('pressed'); 
+        });
+    
+        button.addEventListener('mouseup', () => {
+            button.classList.remove('pressed'); 
+            toggleHeart(heartIcon); 
+        });
+    });
+    
+    function toggleHeart(heartIcon) {
+        
+        if (heartIcon.classList.contains('fa-solid')) {
+           
+            heartIcon.classList.remove('fa-solid', 'fa-heart');
+            heartIcon.classList.add('fa-regular', 'fa-heart'); 
+            heartIcon.style.color = ''; 
+        } else {
+            
+            heartIcon.classList.remove('fa-regular', 'fa-heart');
+            heartIcon.classList.add('fa-solid', 'fa-heart'); 
+            heartIcon.style.color = '#ff3366'; 
+        }
+        
+        
+        heartIcon.closest('.wishlistButton').classList.add('clicked'); 
+        setTimeout(() => {
+            heartIcon.closest('.wishlistButton').classList.remove('clicked'); 
+        }, 300); 
+    }
+    
+    
+    </script>
+</body>
+</html>

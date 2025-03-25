@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Poems</title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/71yQXSpr6sL._UF1000,1000_QL80_.jpg " alt="Ariel">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Love Poems </h1>
+            <p class="book-author">By John Keats</p>
+            <p class="book-rating">★★★★☆ (4.5/5)</p>
+            <p class="book-description">
+                Love Poems by Pablo Neruda is a beautifully curated collection that delves into the depths of love and passion. This collection showcases Neruda's ability to capture the intensity and complexity of romantic feelings through his evocative and lyrical language. The poems explore various dimensions of love, from the joy and ecstasy of new relationships to the pain and longing of lost love.
+                <div class="book-info">
+                <p><strong>Price : ₹843.00</strong> </p>
+                <p><strong>Genre : Poetry</strong> </p>
+                <p><strong>Published : 1924</strong> </p>
+                <p><strong>Publisher : New Directions</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Riya</strong></p>
+            <p>The book is well printed and with meaningful illustrations,and of course Keat's love poetry is sublime and a joy to read,for those in Love now,and for all of us who have found deep love in our lives.
+                </p>
+        </div>
+        <div class="review">
+            <p><strong>Gagan</strong></p>
+            <p> Keats is one of the more readable poets of the nineteenth century in my estimation. You don't have to break out the dictionary to understand Keats most of the time. Not that that is necessarily a bad thing.</p>
+            </div>
+    </div>
+</body>
+</html>

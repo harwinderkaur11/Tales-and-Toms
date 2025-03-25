@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Waste Land </title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_5Wyt9Z67KrDesfpE1MdYsxf3NyjmX6PCw&s " alt="The Waste Land">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">The Waste Land </h1>
+            <p class="book-author">By T.S. Eliot</p>
+            <p class="book-rating">★★★★☆ (4.5/5)</p>
+            <p class="book-description">
+                The Waste Land by T.S. Eliot is one of the most celebrated and enigmatic works of modernist poetry, published in 1922. This influential poem is known for its fragmented structure, extensive use of allusions, and exploration of themes such as disillusionment, decay, and the search for meaning in the post-World War I era.
+                <div class="book-info">
+                <p><strong>Price : ₹2560.00</strong> </p>
+                <p><strong>Genre : Poetry</strong> </p>
+                <p><strong>Published : 1922</strong> </p>
+                <p><strong>Publisher : The Criterion</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="removeQuantity()">-</button>
+            <span id="count">0</span>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity();">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button" onclick="updateQuantity();"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlistButton animation"><i class="fa-regular fa-heart heartIcon"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Ananadita</strong></p>
+            <p>I bought this book as an extra to my literary studies seminar and it was really useful. The annotations at the back are a life safer, specially when it comes to analysing Prufrock. </p>
+        </div>
+        <div class="review">
+            <p><strong>Nancy</strong></p>
+            <p>A chance quotation in a book nudged me to look again at Eliot's poetry, which I haven't read for decades. This "slim volume" is a perfect re-acquaintance, without being too daunting. I remembered how I loved the poetry, and am finding new meaning this time around. Maybe I'll move on to more of it. Thank you.</p>
+            </div>
+    </div>
+    <script>
+        const filter = document.getElementById('count');
+        var counter = 0;
+        function updateQuantity(){
+            counter++;
+            filter.textContent = counter;
+        }
+        function removeQuantity(){
+            counter--;
+            filter.textContent = counter;
+        }
+        
+        
+       
+    const wishlistButtons = document.querySelectorAll('.wishlistButton');
+    
+    wishlistButtons.forEach(button => {
+        const heartIcon = button.querySelector('.heartIcon');
+        
+        button.addEventListener('mouseover', () => {
+            button.classList.add('hovered'); 
+        });
+    
+        button.addEventListener('mouseout', () => {
+            button.classList.remove('hovered'); 
+        });
+    
+        button.addEventListener('mousedown', () => {
+            button.classList.add('pressed'); 
+        });
+    
+        button.addEventListener('mouseup', () => {
+            button.classList.remove('pressed'); 
+            toggleHeart(heartIcon); 
+        });
+    });
+    
+    function toggleHeart(heartIcon) {
+        
+        if (heartIcon.classList.contains('fa-solid')) {
+           
+            heartIcon.classList.remove('fa-solid', 'fa-heart');
+            heartIcon.classList.add('fa-regular', 'fa-heart'); 
+            heartIcon.style.color = ''; 
+        } else {
+            
+            heartIcon.classList.remove('fa-regular', 'fa-heart');
+            heartIcon.classList.add('fa-solid', 'fa-heart'); 
+            heartIcon.style.color = '#ff3366'; 
+        }
+        
+        
+        heartIcon.closest('.wishlistButton').classList.add('clicked'); 
+        setTimeout(() => {
+            heartIcon.closest('.wishlistButton').classList.remove('clicked'); 
+        }, 300); 
+    }
+    
+    
+    </script>
+</body>
+</html>

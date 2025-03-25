@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good to Great</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/81EGFSp4UcL._AC_UF1000,1000_QL80_.jpg" alt="Good to Great">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Good to Great</h1>
+            <p class="book-author">By Jim Collins</p>
+            <p class="book-rating">★★★★☆</p>
+            <p class="book-description">
+                The author explores how companies make the leap from good to great and how they sustain that success over time.
+            </p>
+            <div class="book-info">
+                <p><strong>Price:</strong> ₹1,750</p>
+                <p><strong>Genre:</strong> Business & Leadership</p>
+                <p><strong>Published:</strong> 2001</p>
+                <p><strong>Publisher:</strong> HarperBusiness</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"></i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"></i>&nbsp;Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Linda Brown:</strong></p>
+            <p>"An insightful book on transforming companies into enduring leaders in their field."</p>
+        </div>
+        <div class="review">
+            <p><strong>David Miller:</strong></p>
+            <p>"Essential reading for anyone in leadership or management positions."</p>
+        </div>
+    </div>
+</body>
+</html>

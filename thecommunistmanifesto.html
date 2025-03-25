@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Communist Manifesto</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/71VqMJvTqRL._AC_UF1000,1000_QL80_.jpg" alt="The Communist Manifesto">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">The Communist Manifesto</h1>
+            <p class="book-author">By Karl Marx and Friedrich Engels</p>
+            <p class="book-rating">★★★★☆</p>
+            <p class="book-description">
+                The Communist Manifesto, written by Karl Marx and Friedrich Engels, outlines the principles of communism and presents a critique of capitalism. It is one of the most influential political manuscripts of all time.
+            </p>
+            <div class="book-info">
+                <p><strong>Price:</strong> ₹500</p>
+                <p><strong>Genre:</strong> Political Science, Philosophy</p>
+                <p><strong>Published:</strong> 1848</p>
+                <p><strong>Publisher:</strong> Various Editions</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>David B.</strong></p>
+            <p>The Communist Manifesto is a profound work in political theory that critiques capitalism and advocates for a classless society. A must-read for anyone interested in political movements.</p>
+        </div>
+        <div class="review">
+            <p><strong>Lisa C.</strong></p>
+            <p>Although written in the 19th century, Marx and Engels’ ideas are still discussed in contemporary politics. The Communist Manifesto remains highly influential in socialist and communist ideologies.</p>
+        </div>
+    </div>
+</body>
+</html>

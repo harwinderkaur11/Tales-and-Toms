@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into the Wild </title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Into_the_Wild_%282007_film_poster%29.png " alt="Into the Wild ">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Into the Wild </h1>
+            <p class="book-author">By Jon Krakauer</p>
+            <p class="book-rating">★★★★☆ (4.5/5)</p>
+            <p class="book-description">
+                Into the Wild by Jon Krakauer is a non-fiction book published in 1996 that tells the true story of Christopher McCandless, a young man who ventured into the Alaskan wilderness in search of a simpler, more authentic life.
+                <div class="book-info">
+                <p><strong>Price : ₹1138.00</strong> </p>
+                <p><strong>Genre : Non-Fiction</strong> </p>
+                <p><strong>Published : 1996</strong> </p>
+                <p><strong>Publisher : Villard Books</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="removeQuantity()">-</button>
+            <span id="count">0</span>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity();">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button" onclick="updateQuantity();"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlistButton animation"><i class="fa-regular fa-heart heartIcon"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Juhi</strong></p>
+            <p>Krakauer's masterful narrative unfolds like a cinematic odyssey. 'Into the Wild' is a haunting, visually stunning journey. Chris McCandless's story will leave you breathless. A timeless epic of human spirit.</p>
+        </div>
+        <div class="review">
+            <p><strong>Mansa</strong></p>
+            <p> Started this book in my English class and bought it on my own to read. It immediately grabs the attention of the reader. I was so intrigued by the second chapter that I went on here to get my own copy!</p>
+            </div>
+    </div>
+    <script>
+        const filter = document.getElementById('count');
+        var counter = 0;
+        function updateQuantity(){
+            counter++;
+            filter.textContent = counter;
+        }
+        function removeQuantity(){
+            counter--;
+            filter.textContent = counter;
+        }
+        
+        
+       
+    const wishlistButtons = document.querySelectorAll('.wishlistButton');
+    
+    wishlistButtons.forEach(button => {
+        const heartIcon = button.querySelector('.heartIcon');
+        
+        button.addEventListener('mouseover', () => {
+            button.classList.add('hovered'); 
+        });
+    
+        button.addEventListener('mouseout', () => {
+            button.classList.remove('hovered'); 
+        });
+    
+        button.addEventListener('mousedown', () => {
+            button.classList.add('pressed'); 
+        });
+    
+        button.addEventListener('mouseup', () => {
+            button.classList.remove('pressed'); 
+            toggleHeart(heartIcon); 
+        });
+    });
+    
+    function toggleHeart(heartIcon) {
+        
+        if (heartIcon.classList.contains('fa-solid')) {
+           
+            heartIcon.classList.remove('fa-solid', 'fa-heart');
+            heartIcon.classList.add('fa-regular', 'fa-heart'); 
+            heartIcon.style.color = ''; 
+        } else {
+            
+            heartIcon.classList.remove('fa-regular', 'fa-heart');
+            heartIcon.classList.add('fa-solid', 'fa-heart'); 
+            heartIcon.style.color = '#ff3366'; 
+        }
+        
+        
+        heartIcon.closest('.wishlistButton').classList.add('clicked'); 
+        setTimeout(() => {
+            heartIcon.closest('.wishlistButton').classList.remove('clicked'); 
+        }, 300); 
+    }
+    
+    
+    </script>
+</body>
+</html>

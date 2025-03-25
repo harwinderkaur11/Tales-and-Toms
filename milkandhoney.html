@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk and Honey </title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/71l9WWa-rXL._AC_UF1000,1000_QL80_.jpg " alt="Milk and Honey ">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Milk and Honey </h1>
+            <p class="book-author">By Rupi Kaur</p>
+            <p class="book-rating">★★★★☆ (4.5/5)</p>
+            <p class="book-description">
+                Milk and Honey by Rupi Kaur is a deeply personal collection of poetry and prose that delves into themes of love, loss, trauma, healing, and femininity. Published in 2014, the book is divided into four sections: The Hurting, The Loving, The Breaking, and The Healing. Each section serves a different purpose and explores different emotions, reflecting the journey of pain and healing.
+                <div class="book-info">
+                <p><strong>Price : ₹512.00</strong> </p>
+                <p><strong>Genre : Poetry</strong> </p>
+                <p><strong>Published : 2017</strong> </p>
+                <p><strong>Publisher : Andrews McMeel</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="removeQuantity()">-</button>
+            <span id="count">0</span>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity();">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button" onclick="updateQuantity();"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlistButton animation"><i class="fa-regular fa-heart heartIcon"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Anushka</strong></p>
+            <p>If you are a fan of love poesy this ine is yours . You will be touched with every word.</p>
+        </div>
+        <div class="review">
+            <p><strong>Nancy</strong></p>
+            <p> This is one of the best book out there, I am glad that I found this book it contains 4 stages of life all over this book is recommended from by side.</p>
+            </div>
+    </div>   <script>
+        const filter = document.getElementById('count');
+        var counter = 0;
+        function updateQuantity(){
+            counter++;
+            filter.textContent = counter;
+        }
+        function removeQuantity(){
+            counter--;
+            filter.textContent = counter;
+        }
+        
+        
+       
+    const wishlistButtons = document.querySelectorAll('.wishlistButton');
+    
+    wishlistButtons.forEach(button => {
+        const heartIcon = button.querySelector('.heartIcon');
+        
+        button.addEventListener('mouseover', () => {
+            button.classList.add('hovered'); 
+        });
+    
+        button.addEventListener('mouseout', () => {
+            button.classList.remove('hovered'); 
+        });
+    
+        button.addEventListener('mousedown', () => {
+            button.classList.add('pressed'); 
+        });
+    
+        button.addEventListener('mouseup', () => {
+            button.classList.remove('pressed'); 
+            toggleHeart(heartIcon); 
+        });
+    });
+    
+    function toggleHeart(heartIcon) {
+        
+        if (heartIcon.classList.contains('fa-solid')) {
+           
+            heartIcon.classList.remove('fa-solid', 'fa-heart');
+            heartIcon.classList.add('fa-regular', 'fa-heart'); 
+            heartIcon.style.color = ''; 
+        } else {
+            
+            heartIcon.classList.remove('fa-regular', 'fa-heart');
+            heartIcon.classList.add('fa-solid', 'fa-heart'); 
+            heartIcon.style.color = '#ff3366'; 
+        }
+        
+        
+        heartIcon.closest('.wishlistButton').classList.add('clicked'); 
+        setTimeout(() => {
+            heartIcon.closest('.wishlistButton').classList.remove('clicked'); 
+        }, 300); 
+    }
+    
+    
+    </script>
+</body>
+</html>

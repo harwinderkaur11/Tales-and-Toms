@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharp Objects</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/91OcbtgNWZL._AC_UF1000,1000_QL80_.jpg" alt="Sharp Objects">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Sharp Objects</h1>
+            <p class="book-author">By Gillian Flynn</p>
+            <p class="book-rating">★★★★★</p>
+            <p class="book-description">A psychological thriller about a journalist returning to her hometown to cover a series of brutal murders that may be connected to her troubled past.</p>
+            <div class="book-info">
+                <p><strong>Price :</strong> ₹599</p>
+                <p><strong>Genre :</strong> Psychological Thriller, Mystery</p>
+                <p><strong>Published :</strong> 2006</p>
+                <p><strong>Publisher : </strong> Shaye Areheart Books</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+</body>
+</html>

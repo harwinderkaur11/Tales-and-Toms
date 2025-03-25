@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinking, Fast and Slow</title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/71f6DceqZAL._AC_UF1000,1000_QL80_.jpg"alt="Thinking, Fast and Slow">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Thinking, Fast and Slow</h1>
+            <p class="book-author">By Daniel Kahneman</p>
+            <p class="book-rating">★★★★☆ (4.5/5)</p>
+            <p class="book-description">
+                Thinking, Fast and Slow by Daniel Kahneman is a groundbreaking book that delves into the dual systems of thinking that drive our decisions and behaviors. Published in 2011, the book explains the two modes of thought: System 1, which is fast, intuitive, and emotional; and System 2, which is slower, more deliberate, and logical.
+                <div class="book-info">
+                <p><strong>Price : ₹518.00</strong> </p>
+                <p><strong>Genre : Non-Fiction</strong> </p>
+                <p><strong>Published : 2013</strong> </p>
+                <p><strong>Publisher : Penguin Books</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Harry</strong></p>
+            <p>Very technical almost mathematical. But that's why i read it. Not for casual readers. In-depth explanation of how minds work. Very scientific. Is like reading a research paper.</p>
+        </div>
+        <div class="review">
+            <p><strong>Komal</strong></p>
+            <p> This is the best book going into details of working of our minds, how we take decisions, the biases intricate into all of us. Just go for it.
+            </p>
+            </div>
+    </div>
+</body>
+</html>

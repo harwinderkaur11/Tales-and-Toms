@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Collected Poems of W.B. Yeats</title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/7155miCUOjL._AC_UF1000,1000_QL80_.jpg " alt="The Collected Poems of W.B. Yeats">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">The Collected Poems of W.B. Yeats </h1>
+            <p class="book-author">By  W.B. Yeats</p>
+            <p class="book-rating">★★★★☆ (4.5/5)</p>
+            <p class="book-description">
+                "The Collected Poems of W.B. Yeats" is a comprehensive collection of poems by William Butler Yeats, edited by Richard J. Finneran. This edition includes all the poems Yeats authorized for his standard canon, showcasing the breadth of his work from early lyrics to later, more complex pieces.
+                <div class="book-info">
+                <p><strong>Price : ₹1700.00</strong> </p>
+                <p><strong>Genre : Poetry</strong> </p>
+                <p><strong>Published : 1996</strong> </p>
+                <p><strong>Publisher : Scribner</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Jiya</strong></p>
+            <p>Beautiful cover with cheap newsprint pages! So bizarrely mismatched. Page also misfolded and torn inside book. Bought for a gift and did not give it.
+                </p>
+        </div>
+        <div class="review">
+            <p><strong>Daisy</strong></p>
+            <p> The containt, the poems are great but i have received a destroyed book.
+                I don't want to give it a less star because the poem is good and i have given the rating for the poems</p>
+            </div>
+    </div>
+</body>
+</html>

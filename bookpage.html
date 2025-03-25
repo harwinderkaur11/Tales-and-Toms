@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="" alt="">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title"></h1>
+            <p class="book-author"></p>
+            <p class="book-rating">ratings</p>
+            <p class="book-description"></p>
+            <div class="book-info">
+                <p><strong>Price :</strong> </p>
+                <p><strong>Genre :</strong> </p>
+                <p><strong>Published :</strong> </p>
+                <p><strong>Publisher : </strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Withlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong></strong></p>
+            <p></p>
+        </div>
+        <div class="review">
+            <p><strong></strong></p>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>

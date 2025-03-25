@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fourth Wing</title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/71GSNEGSHJL._UF1000,1000_QL80_.jpg" alt="We Solve Murders">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">We Solve Murders</h1>
+            <p class="book-author">By Richard Osman</p>
+            <p class="book-rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+            <p class="book-description">
+                In "We Solve Murders," a team of elite detectives takes center stage, combining sharp intellect, cutting-edge forensics, and sheer tenacity to untangle the most perplexing crimes. From the gritty streets of the city to the quiet corners of small towns, their pursuit of justice leads them into a web of deceit, secrets, and danger. Each case is a battle against time and the unknown, where every clue matters and every suspect has a story. Join them on a thrilling journey as they navigate through complex mysteries, unmasking the truth hidden behind the façade. "We Solve Murders" is a gripping tale of suspense, ingenuity, and the relentless quest for justice.
+                <div class="book-info">
+                <p><strong>Price : ₹1765.00</strong> </p>
+                <p><strong>Genre : Mystery, Crime</strong> </p>
+                <p><strong>Published : 2024</strong> </p>
+                <p><strong>Publisher : Pamela Dorman Books</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="removeQuantity()">-</button>
+            <span id="count">0</span>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity();">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button" onclick="updateQuantity();"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlistButton animation"><i class="fa-regular fa-heart heartIcon"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Karen</strong></p>
+            <p>If Richard Osman had any reason to take a break from the beloved Thursday Murder Club series that many of us have come to love to start a new one, at least he made it a good one!</p>
+        </div>
+        <div class="review">
+            <p><strong>Provin Martin</strong></p>
+            <p> Brilliant characters, sparkling banter and a very big heart        
+                </p>
+            </div>
+    </div>
+    <script>
+        const filter = document.getElementById('count');
+        var counter = 0;
+        function updateQuantity(){
+            counter++;
+            filter.textContent = counter;
+        }
+        function removeQuantity(){
+            counter--;
+            filter.textContent = counter;
+        }
+        
+        
+       
+    const wishlistButtons = document.querySelectorAll('.wishlistButton');
+    
+    wishlistButtons.forEach(button => {
+        const heartIcon = button.querySelector('.heartIcon');
+        
+        button.addEventListener('mouseover', () => {
+            button.classList.add('hovered'); 
+        });
+    
+        button.addEventListener('mouseout', () => {
+            button.classList.remove('hovered'); 
+        });
+    
+        button.addEventListener('mousedown', () => {
+            button.classList.add('pressed'); 
+        });
+    
+        button.addEventListener('mouseup', () => {
+            button.classList.remove('pressed'); 
+            toggleHeart(heartIcon); 
+        });
+    });
+    
+    function toggleHeart(heartIcon) {
+        // Check if the heart is solid
+        if (heartIcon.classList.contains('fa-solid')) {
+            // If it's solid and colored (i.e., red), revert to regular heart with no color
+            heartIcon.classList.remove('fa-solid', 'fa-heart');
+            heartIcon.classList.add('fa-regular', 'fa-heart'); 
+            heartIcon.style.color = ''; // Remove color
+        } else {
+            // Otherwise, make it solid and apply the red color
+            heartIcon.classList.remove('fa-regular', 'fa-heart');
+            heartIcon.classList.add('fa-solid', 'fa-heart'); 
+            heartIcon.style.color = '#ff3366'; // Apply red color
+        }
+        
+        // Add a temporary "clicked" class to animate the click (optional visual feedback)
+        heartIcon.closest('.wishlistButton').classList.add('clicked'); 
+        setTimeout(() => {
+            heartIcon.closest('.wishlistButton').classList.remove('clicked'); 
+        }, 300); 
+    }
+    
+    
+    </script>
+</body>
+</html>

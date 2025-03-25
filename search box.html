@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Search Box
+        </title>
+        <style>
+            .hidden{
+                display: 'none';
+            }
+</style>
+    </head>
+    <body>
+        <input type="input" id="SearchBox" placeholder="Search Items...">
+        <ul id="items">
+            <li><a href="#featured_books">Featured Books</a></li>
+            <li><a href="fictional books.html">Fictional Books</a></li>
+            <li><a href="non-fictional.html">Non-Fictional Books</a></li>
+            <li><a href="poetry.html">Poetry Books</a></li>
+            <li><a href="politics.html">Political books</a></li>
+            <li><a href="enterprenurship.html">Enterpreneurship</a></li>
+            <li><a href="biography.html">Biography</a></li>
+            <li><a href="crime.html">Crime Books</a></li>
+            <li><a href="comic.html">Comic Books</a></li>
+            <li><a href="horror.html">Horror books</a></li>
+            <li><a href="romantic.html">Romantic Books</a></li>
+            <li><a href="fourthwing.html">Fourth Wing</a></li>
+            <li><a href="wesolvemurders.html">We Solve Murders</a></li>
+            <li><a href="itendswithus.html">It Ends With Us</a></li>
+            <li><a href="atomichabits.html">Atomic Habits</a></li>
+            <li><a href="1984.html">1984</a></li>
+            <li><a href="theroad.html">The Road</a></li>
+            <li><a href="beloved.html">Beloved</a></li>
+            <li><a href="lifeofpi.html">Life of Pi</a></li>
+            <li><a href="educated.html">Educated</a></li>
+            <li><a href="becoming.html">becoming</a></li>
+            <li><a href="thewrightbrothers.html">The Wright Brothers</a></li>
+            <li><a href="intothewild.html">Into the Wild</a></li>
+            <li><a href="milkandhoney.html">Milk and Honey</a></li>
+            <li><a href="thewasteland.html">The Waste Land</a></li>
+            <li><a href="leavesofgrass.html">Leaves of Grass</a></li>
+            <li><a href="ariel.html">Ariel</a></li>
+            <li><a href="theprince.html">The Prince</a></li>
+            <li><a href="therepublic.html">The Republic</a></li>
+            <li><a href="theleviathan.html">The Leviathan</a></li>
+            <li><a href="democracyinamerica.html">Democracy in America</a></li>
+            <li><a href="the lean startup.html">The Learn Startup</a></li>
+            <li><a href="start with why.html">Start With Why</a></li>
+            <li><a href="The 4-Hour Workweek.html">The 4-hour Workweek</a></li>
+            <li><a href="good to great.html">Good to Great</a></li>
+            <li><a href="stevejobs.html">Steve Jobs</a></li>
+            <li><a href="the diary of a young girl.html">The Diary of a Young Girl</a></li>
+            <li><a href="becoming.html">Becoming</a></li>
+            <li><a href="alexander hamilton.html">Alexander Hamilton</a></li>
+            <li><a href="prideandprejudice.html">Pride and Prejudice</a></li>
+            <li><a href="outlander.html">Outlander</a></li>
+            <li><a href="thekissquotient.html">The Kiss Quotient</a></li>
+            <li><a href="red,white&royalblue.html">Red, White & Royal Blue</a></li>
+            <li><a href="thewomanintheewindow.html">The Woman in the Window</a></li>
+            <li><a href="the godfather.html">The GodFather</a></li>
+            <li><a href="gonegirl.html">Gone Girl</a></li>
+            <li><a href="the girl with the dragon tattoo.html">The Girl with the Dragon Tattoo</a></li>
+            <li><a href="watchmen.html">Watchmen</a></li>
+            <li><a href="maus.html">Maus</a></li>
+            <li><a href="sandman.html">Sandman</a></li>
+            <li><a href="saga.html"><saga class="html"></saga></a></li>
+            <li><a href="thehauntingofhillhouse.html">The Haunting of the Hill House</a></li>
+            <li><a href="dracula.html">Dracula</a></li>
+            <li><a href="frankenstein.html">Frankenstein</a></li>
+            <li><a href="it.html">It</a></li>
+        </ul>
+<script>
+    const searchBox = document.getElementById('SearchBox');
+    const itemlist = document.getElementById('items');
+    const items = itemlist.getElementsByTagName('li');
+
+    searchBox.addEventListener('input',()=>
+    {
+        const value = searchBox.value.toLowerCase();
+
+        for (const item of items){
+            const text = item.textContent;
+
+            if (text.toLowerCase().includes(value)){
+                item.style.display="";
+            }
+            else{
+                item.style.display="none";
+            }
+        }
+    })
+</script>
+    </body>
+</html>

@@ -1,0 +1,159 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/564x/a3/eb/1e/a3eb1e5d87229ecdea29bfcd04453123.jpg);
+}
+
+.book-container {
+    display: flex;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ebe6df;
+}
+
+.book-cover img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.book-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.book-title {
+    font-size: 2em;
+    color: #4b301e;
+}
+
+.book-author {
+    font-size: 1.2em;
+    color: rgb(20, 20, 20);
+    margin: 5px 0;
+}
+
+.book-rating {
+    font-size: 1em;
+    color: #ffa500;
+    margin: 10px 0;
+}
+
+.book-description {
+    font-size: 1em;
+    color: rgb(20, 20, 20);
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.book-info p {
+    font-size: 0.9em;
+    color: rgb(20, 20, 20);
+    margin: 5px 0;
+}
+
+
+.buy-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #664229;
+    color: #ebe6df;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #4b301e;
+}
+
+.cart-button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #664229;
+    color: #ebe6df;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.cart-button:hover {
+    background-color: #4b301e;
+}
+
+.wishlistButton{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #664229;
+    color: #ebe6df;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+.wishlist-button:hover {
+    background-color: #4b301e;
+}
+
+.reviews-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.reviews-section h2 {
+    font-size: 1.8em;
+    color: #ebe6df;
+    margin-bottom: 15px;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ebe6df;
+}
+
+.review p {
+    font-size: 0.9em;
+    color: rgb(20, 20, 20);
+}
+
+.review strong {
+    font-size: 1em;
+    color: rgb(20, 20, 20);
+}
+
+.quantity-btn {
+    background-color: #ebe6df;
+    border: 1px solid #4b301e;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #ebe6df;
+}

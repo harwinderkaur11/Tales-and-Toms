@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Life of Pi</title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src=" https://m.media-amazon.com/images/I/81E9oNSK3bL._AC_UF1000,1000_QL80_.jpg"alt="Life of Pi">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Life of Pi</h1>
+            <p class="book-author">By Yann Martel</p>
+            <p class="book-rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+            <p class="book-description">
+                
+                "Life of Pi" by Yann Martel is a captivating novel that follows the incredible journey of Piscine Molitor "Pi" Patel, a young Indian boy who survives a shipwreck and is stranded on a lifeboat in the Pacific Ocean. Pi's companions on this harrowing journey include a Bengal tiger named Richard Parker, a zebra, a hyena, and an orangutan. The story delves into themes of survival, faith, and the human spirit's resilience in the face of overwhelming odds.   
+</p>
+                <div class="book-info">
+                <p><strong>Price : ₹500.00</strong> </p>
+                <p><strong>Genre : Fiction,Fantasy</strong> </p>
+                <p><strong>Published : 2001</strong> </p>
+                <p><strong>Publisher : Knopf Canada</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>James</strong></p>
+            <p> 'Every page offers something of tension, humanity, surprise, or even ecstasy'</p>
+        </div>
+        <div class="review">
+            <p><strong>Luthra</strong></p>
+            <p> 'Extraordinary... Life of Pi could renew your faith in the ability of novelists to invest even the most outrageous scenario with plausible life'  </p>
+            </div>
+    </div>
+</body>
+</html>

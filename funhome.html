@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Home</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/71coopGxbSL._AC_UF1000,1000_QL80_.jpg" alt="Fun Home">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Fun Home</h1>
+            <p class="book-author">By Alison Bechdel</p>
+            <p class="book-rating">★★★★☆</p>
+            <p class="book-description">A graphic memoir by Alison Bechdel about her relationship with her father and her coming out as a lesbian.</p>
+            <div class="book-info">
+                <p><strong>Price :</strong> ₹1099</p>
+                <p><strong>Genre :</strong> Memoir, LGBTQ+</p>
+                <p><strong>Published :</strong> 2006</p>
+                <p><strong>Publisher : </strong> Houghton Mifflin Harcourt</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Michael Johnson</strong></p>
+            <p>This book is a remarkable journey into the complexities of family dynamics. Alison Bechdel's storytelling is heartfelt and powerful. Highly recommended!</p>
+        </div>
+        <div class="review">
+            <p><strong>Emily Davis</strong></p>
+            <p>A beautifully illustrated and emotionally charged memoir. It really makes you think about family, identity, and coming to terms with one's past.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Gothic</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/81Q9jM2ASmL._AC_UF1000,1000_QL80_.jpg" alt="Mexican Gothic">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Mexican Gothic</h1>
+            <p class="book-author">By Silvia Moreno-Garcia</p>
+            <p class="book-rating">★★★★★</p>
+            <p class="book-description">A gothic horror novel set in Mexico in the 1950s. A young woman must confront dark family secrets after traveling to a decaying mansion to rescue her cousin from a terrifying and supernatural situation.</p>
+            <div class="book-info">
+                <p><strong>Price :</strong> ₹749</p>
+                <p><strong>Genre :</strong> Gothic Horror, Thriller</p>
+                <p><strong>Published :</strong> 2020</p>
+                <p><strong>Publisher : </strong> Del Rey</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ballad of Black Tom</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/71AEUjQUIlL._AC_UL210_SR210,210_.jpg" alt="The Ballad of Black Tom">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">The Ballad of Black Tom</h1>
+            <p class="book-author">By Victor LaValle</p>
+            <p class="book-rating">★★★★★</p>
+            <p class="book-description">A Lovecraftian novella that blends horror, racism, and cosmic terror, telling the story of an African-American man who unwittingly summons supernatural forces.</p>
+            <div class="book-info">
+                <p><strong>Price :</strong> ₹499</p>
+                <p><strong>Genre :</strong> Horror, Lovecraftian Fiction</p>
+                <p><strong>Published :</strong> 2016</p>
+                <p><strong>Publisher : </strong> Tor</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+</body>
+</html>

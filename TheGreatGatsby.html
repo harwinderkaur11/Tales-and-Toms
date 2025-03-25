@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The Great Gats By</title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://cdn.kobo.com/book-images/f37f5bc2-8171-475a-99fb-2f807813e085/353/569/90/False/the-great-gatsby-deluxe-hardbound-edition.jpg " alt="The Great Gatsby">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title"> The Great Gats By</h1>
+            <p class="book-author">By F. Scott Fitzgerald</p>
+            <p class="book-rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+            <p class="book-description">
+                "The Great Gatsby" by F. Scott Fitzgerald is a classic novel set in the Roaring Twenties. It explores themes of wealth, love, and the American Dream through the story of Jay Gatsby, a mysterious and wealthy man known for throwing lavish parties in hopes of reuniting with his lost love, Daisy Buchanan.    
+</p>
+                <div class="book-info">
+                <p><strong>Price : ₹1239.00</strong> </p>
+                <p><strong>Genre : Fiction</strong> </p>
+                <p><strong>Published : 1925</strong> </p>
+                <p><strong>Publisher : Charles Scribner's Sons</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Priyanka</strong></p>
+            <p>The book is great but what surprised me the most was the design of the book. Each page is outlined gold which looks beautiful</p>
+        </div>
+        <div class="review">
+            <p><strong>Kamlesh</strong></p>
+            <p> The book arrived in a perfect condition. Was properly handlel and there weren't any detective pages or the cover wasn't bent on any side. Absolutely gorgeous. Definitely should buy !!</p>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="" alt="">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Anna Karenina</h1>
+            <p class="book-author">Leo Tolstoy</p>
+            <p class="book-rating">★★★★☆</p>
+            <p class="book-description">Anna Karenina is a deeply emotional and philosophical novel that explores a wide array of themes such as love, betrayal, marriage, and the social issues of 19th-century Russian aristocracy. The story follows Anna Karenina, a beautiful and passionate woman trapped in a loveless marriage with her husband, Alexei Alexandrovich, while falling in love with the charming officer, Count Vronsky. The novel also portrays the contrasting lives of other characters, particularly Konstantin Levin, who represents Tolstoy's own search for spiritual and personal meaning.
+
+                The novel's exploration of infidelity, societal norms, and moral dilemmas has made it one of the most celebrated and influential works in world literature.</p>
+            <div class="book-info">
+                <p><strong>Price : ₹200 </strong> </p>
+                <p><strong>Genre : Literary fiction</strong> </p>
+                <p><strong>Published : 1877</strong> </p>
+                <p><strong>Publisher : The Russian Messenger  </strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong></strong></p>
+            <p></p>
+        </div>
+        <div class="review">
+            <p><strong></strong></p>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>

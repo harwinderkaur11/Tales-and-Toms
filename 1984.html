@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 1984</title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://ashokbookcentre.com/wp-content/uploads/2023/08/514CVwOrybL.jpg" alt="1984">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">1984</h1>
+            <p class="book-author">By George Orwell</p>
+            <p class="book-rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+            <p class="book-description">
+                "1984" by George Orwell is a dystopian novel that explores the dangers of totalitarianism and extreme political ideology. Published in 1949, the story is set in a grim future where the world is ruled by three totalitarian superstates. The novel follows the life of Winston Smith, a low-ranking member of the ruling Party in London, in the nation of Oceania. The Party, led by the enigmatic Big Brother, employs omnipresent surveillance and mind control to maintain its power and suppress any form of dissent.</p>
+                <div class="book-info">
+                <p><strong>Price : ₹177.00</strong> </p>
+                <p><strong>Genre : Dystopian Fiction</strong> </p>
+                <p><strong>Published : 1994</strong> </p>
+                <p><strong>Publisher : Secker & Warburg</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="removeQuantity()">-</button>
+            <span id="count">0</span>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity();">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button" onclick="updateQuantity();"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlistButton animation"><i class="fa-regular fa-heart heartIcon"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Ram Sundar</strong></p>
+            <p> 1984 is not meant to be an easy read, but once you read it you'll understand everything. After all, this is a dystopian novel which is one of the greatest of all time. I haven't read AF yet, but I heard it's one of the most amazing novellas.</p>
+        </div>
+        <div class="review">
+            <p><strong>Dharani</strong></p>
+            <p>  This publication company has the best font style, it is so delicate and neat, so pretty. The book covers and the combo box are both so gorgeous with mellow colours, even the bright colours look so matte.
+            </p>
+            </div>
+    </div>
+    <script>
+        const filter = document.getElementById('count');
+        var counter = 0;
+        function updateQuantity(){
+            counter++;
+            filter.textContent = counter;
+        }
+        function removeQuantity(){
+            counter--;
+            filter.textContent = counter;
+        }
+        
+        
+       
+    const wishlistButtons = document.querySelectorAll('.wishlistButton');
+    
+    wishlistButtons.forEach(button => {
+        const heartIcon = button.querySelector('.heartIcon');
+        
+        button.addEventListener('mouseover', () => {
+            button.classList.add('hovered'); 
+        });
+    
+        button.addEventListener('mouseout', () => {
+            button.classList.remove('hovered'); 
+        });
+    
+        button.addEventListener('mousedown', () => {
+            button.classList.add('pressed'); 
+        });
+    
+        button.addEventListener('mouseup', () => {
+            button.classList.remove('pressed'); 
+            toggleHeart(heartIcon); 
+        });
+    });
+    
+    function toggleHeart(heartIcon) {
+        
+        if (heartIcon.classList.contains('fa-solid')) {
+           
+            heartIcon.classList.remove('fa-solid', 'fa-heart');
+            heartIcon.classList.add('fa-regular', 'fa-heart'); 
+            heartIcon.style.color = ''; 
+        } else {
+            
+            heartIcon.classList.remove('fa-regular', 'fa-heart');
+            heartIcon.classList.add('fa-solid', 'fa-heart'); 
+            heartIcon.style.color = '#ff3366'; 
+        }
+        
+        
+        heartIcon.closest('.wishlistButton').classList.add('clicked'); 
+        setTimeout(() => {
+            heartIcon.closest('.wishlistButton').classList.remove('clicked'); 
+        }, 300); 
+    }
+    
+    
+    </script>
+</body>
+</html>

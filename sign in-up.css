@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EBE6DF; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/f9/ad/f5/f9adf5e9e9b61b1f7bc814f056b9b893.jpg);
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 2rem;
+    background-color: #EBE6DF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #664229;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-wrapper {
+    flex: 1;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #664229; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+.error-message {
+    color: red; /* Changed for better visibility */
+    font-size: 16px;
+    margin-top: 5px;
+    display: none; /* Hidden by default */
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"], 
+input[type="date"]
+{
+    
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input [type = "number"]::-webkit-inner-spin-button,
+input [type = "number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type = "number"]{
+    appearance: textfield;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #664229; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #664229; 
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #664229; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

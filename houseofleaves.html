@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Leaves</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/51BJPS7pN1L._AC_UF1000,1000_QL80_.jpg" alt="House of Leaves">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">House of Leaves</h1>
+            <p class="book-author">By Mark Z. Danielewski</p>
+            <p class="book-rating">★★★★★</p>
+            <p class="book-description">A mysterious and complex novel about a family who moves into a house with a strange secret, told through a fragmented narrative with footnotes and multiple perspectives.</p>
+            <div class="book-info">
+                <p><strong>Price :</strong> ₹799</p>
+                <p><strong>Genre :</strong> Horror, Mystery</p>
+                <p><strong>Published :</strong> 2000</p>
+                <p><strong>Publisher : </strong> Pantheon Books</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Emily Watson</strong></p>
+            <p>"A mind-bending experience! The unconventional narrative style draws you in, making it a truly unique read." </p>
+        </div>
+        <div class="review">
+            <p><strong>James Carter</strong></p>
+            <p>"An intricate and disturbing novel that keeps you on edge. The footnotes make the experience even more unsettling." </p>
+        </div>
+    </div>
+</body>
+</html>

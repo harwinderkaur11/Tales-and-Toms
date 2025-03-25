@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The $100 Startup</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/81FWe1elZdL._AC_UF1000,1000_QL80_.jpg" alt="The $100 Startup">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">The $100 Startup</h1>
+            <p class="book-author">By Chris Guillebeau</p>
+            <p class="book-rating">★★★★☆</p>
+            <p class="book-description">
+                Learn how to start a successful business with just $100, using examples from over 1,500 entrepreneurs who have done it.
+            </p>
+            <div class="book-info">
+                <p><strong>Price:</strong> ₹1,299</p>
+                <p><strong>Genre:</strong> Entrepreneurship</p>
+                <p><strong>Published:</strong> 2012</p>
+                <p><strong>Publisher:</strong> Crown Business</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"></i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"></i>&nbsp;Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Ravi K:</strong></p>
+            <p>"A great guide for starting a business with little money. Very practical and inspiring."</p>
+        </div>
+        <div class="review">
+            <p><strong>Sara P:</strong></p>
+            <p>"It’s amazing to see how so many people turned $100 into a business. A must-read for anyone thinking about entrepreneurship!"</p>
+        </div>
+    </div>
+</body>
+</html>

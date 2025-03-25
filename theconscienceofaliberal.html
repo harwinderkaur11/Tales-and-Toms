@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Conscience of a Liberal</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/61jHVWAl1hL._AC_UF1000,1000_QL80_.jpg" alt="The Conscience of a Liberal">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">The Conscience of a Liberal</h1>
+            <p class="book-author">By Paul Krugman</p>
+            <p class="book-rating">★★★★☆</p>
+            <p class="book-description">
+                In this book, economist Paul Krugman argues that the increasing inequality in American society has been driven by policy choices, 
+                particularly since the 1970s. He explores the relationship between economic and political systems, making the case for liberal values.
+            </p>
+            <div class="book-info">
+                <p><strong>Price:</strong> ₹1,100</p>
+                <p><strong>Genre:</strong> Economics, Political Science</p>
+                <p><strong>Published:</strong> 2007</p>
+                <p><strong>Publisher:</strong> W.W. Norton & Company</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Richard Lee:</strong></p>
+            <p>Krugman’s analysis of economic inequality is deeply compelling and thought-provoking. A crucial read for anyone concerned with the future of the American economy.</p>
+        </div>
+        <div class="review">
+            <p><strong>Clara Adams:</strong></p>
+            <p>Engaging, informative, and timely. Krugman argues persuasively for the importance of liberal policies in combating inequality and fostering economic growth.</p>
+        </div>
+    </div>
+</body>
+</html>

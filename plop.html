@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plop</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/81U6F6IaPzL._SL1500_.jpg" alt="Plop">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Plop</h1>
+            <p class="book-author">By Samuel Small</p>
+            <p class="book-rating">★★★★★</p>
+            <p class="book-description">A surreal horror tale about the experience of a man facing strange and inexplicable events that seem to be connected to a dark past, with terrifying and mind-bending consequences.</p>
+            <div class="book-info">
+                <p><strong>Price :</strong> ₹599</p>
+                <p><strong>Genre :</strong> Horror, Psychological Thriller</p>
+                <p><strong>Published :</strong> 2021</p>
+                <p><strong>Publisher : </strong> Infinito Publishing</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+</body>
+</html>

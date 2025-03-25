@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital in the Twenty-First Century</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/51Vg2pcezFL._AC_UF1000,1000_QL80_.jpg" alt="Capital in the Twenty-First Century">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Capital in the Twenty-First Century</h1>
+            <p class="book-author">By Thomas Piketty</p>
+            <p class="book-rating">★★★★★</p>
+            <p class="book-description">
+                In Capital in the Twenty-First Century, Thomas Piketty explores the economic disparity between the rich and poor over the past few centuries. His analysis of income inequality and wealth distribution has been widely influential and sparked global discussions.
+            </p>
+            <div class="book-info">
+                <p><strong>Price:</strong> ₹1,500</p>
+                <p><strong>Genre:</strong> Economics, Social Science</p>
+                <p><strong>Published:</strong> 2013</p>
+                <p><strong>Publisher:</strong> Harvard University Press</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>James D.</strong></p>
+            <p>This is a must-read for anyone interested in understanding the economics of inequality. Piketty’s research is thorough and thought-provoking.</p>
+        </div>
+        <div class="review">
+            <p><strong>Emma S.</strong></p>
+            <p>Incredible insights into the global distribution of wealth. Piketty’s analysis of capital and inequality is crucial to understanding modern economics.</p>
+        </div>
+    </div>
+</body>
+</html>

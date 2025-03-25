@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Poetry of Robert Frost</title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/81qGZ6hRoJL._AC_UF1000,1000_QL80_.jpg" alt="">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">The Poetry of Robert Frost </h1>
+            <p class="book-author">By Robert Frost</p>
+            <p class="book-rating">★★★★☆ (4.5/5)</p>
+            <p class="book-description">
+                Robert Frost is one of the most celebrated American poets of the 20th century, known for his exploration of rural life and his mastery of American colloquial speech. His poetry often delves into themes such as nature, isolation, and the human experience, combining simplicity with profound philosophical insights.
+                <div class="book-info">
+                <p><strong>Price : ₹1766.00</strong> </p>
+                <p><strong>Genre : Poetry</strong> </p>
+                <p><strong>Published : 2019</strong> </p>
+                <p><strong>Publisher : Canterbury Classics</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Harry</strong></p>
+            <p>As a child, I was fascinated by Frost's poetry. As an adult, I was mesmerised by how eloquently and beautifully he could express the most complex of ideas and concepts. The enchantment remains. And the fanatic obsession too. This is a book that helps to satiate some of the obsession.
+                </p>
+        </div>
+        <div class="review">
+            <p><strong>Kiran</strong></p>
+            <p> Awesome product, wish they wrapped it around the bubble sheet but anyway and really the price 440 is too high. For a small and 300 page book, and should be reduced around 200.</p>
+            </div>
+    </div>
+</body>
+</html>

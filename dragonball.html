@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/91RfMSE6a8L._AC_UF1000,1000_QL80_.jpg" alt="Dragon Ball">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Dragon Ball</h1>
+            <p class="book-author">By Akira Toriyama</p>
+            <p class="book-rating">★★★★★</p>
+            <p class="book-description">Follow the journey of Goku from his childhood to adulthood as he grows into one of the most powerful warriors in the universe.</p>
+            <div class="book-info">
+                <p><strong>Price :</strong> ₹599</p>
+                <p><strong>Genre :</strong> Adventure, Fantasy, Martial Arts</p>
+                <p><strong>Published :</strong> 1984</p>
+                <p><strong>Publisher : </strong> Shueisha</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>David Harris</strong></p>
+            <p>Dragon Ball is a timeless classic. From Goku's humble beginnings to his epic battles, this manga captures the essence of adventure and martial arts.</p>
+        </div>
+        <div class="review">
+            <p><strong>Sarah Lee</strong></p>
+            <p>An iconic story of strength, friendship, and adventure. I grew up with Dragon Ball, and it never fails to entertain with its legendary characters and intense action!</p>
+        </div>
+    </div>
+</body>
+</html>

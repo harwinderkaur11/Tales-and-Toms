@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Complete Poems </title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/61tu5gsiv7L._AC_UF350,350_QL50_.jpg" alt="">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">The Complete Poems  </h1>
+            <p class="book-author">By Anne Sexton</p>
+            <p class="book-rating">★★★★☆ (4.5/5)</p>
+            <p class="book-description">
+                The Complete Poems by Anne Sexton is a comprehensive collection that brings together all of her published poetry, including her Pulitzer Prize-winning collection "Live or Die". Published posthumously in 1981, this anthology also includes seven poems from her final years
+                <div class="book-info">
+                <p><strong>Price : ₹1543.00</strong> </p>
+                <p><strong>Genre : Poetry</strong> </p>
+                <p><strong>Published : 1999</strong> </p>
+                <p><strong>Publisher : Ecco</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Harry</strong></p>
+            <p>I've been looking for a comprehensive collection of Sexton's work for several years. this is what I was looking for. hardcover would have been better, but that's not much of a downside.
+                this collection is absolutely wonderful, and I would highly recommend it.                </p>
+        </div>
+        <div class="review">
+            <p><strong>Kiran</strong></p>
+            <p> I will use the Complete Poems of Anne Sexton for my upcoming university class of poetry.</p>
+            </div>
+    </div>
+</body>
+</html>

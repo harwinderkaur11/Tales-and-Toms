@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratan Tata - Book Page</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/719oHU9kiFL._SY342_.jpg" alt="Ratan Tata Cover">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Ratan Tata</h1>
+            <p class="book-author">By Thomas Mathew</p>
+            <p class="book-rating">★★★★★</p>
+            <p class="book-description">
+                A biography of Ratan Tata, chronicling his journey as the head of the Tata Group and his significant role in India’s corporate world.
+            </p>
+            <div class="book-info">
+                <p><strong>Price :</strong> ₹1,000</p>
+                <p><strong>Genre :</strong> Biography</p>
+                <p><strong>Published :</strong> 2020</p>
+                <p><strong>Publisher :</strong> Penguin Random House India</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Ravi Kumar:</strong></p>
+            <p>"An insightful look into Ratan Tata’s life, leadership style, and contributions to India’s economy."</p>
+        </div>
+        <div class="review">
+            <p><strong>Priya Mehta:</strong></p>
+            <p>"A must-read for anyone interested in business, leadership, and the values of corporate responsibility."</p>
+        </div>
+    </div>
+</body>
+</html>
+-

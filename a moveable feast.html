@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Moveable Feast - Book Page</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/61KiwSu7+lL._AC_UF1000,1000_QL80_.jpg" alt="A Moveable Feast Cover">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">A Moveable Feast</h1>
+            <p class="book-author">By Ernest Hemingway</p>
+            <p class="book-rating">★★★★★</p>
+            <p class="book-description">
+                Ernest Hemingway’s memoir about his time in Paris in the 1920s, offering insights into his life and literary career.
+            </p>
+            <div class="book-info">
+                <p><strong>Price :</strong> ₹750</p>
+                <p><strong>Genre :</strong> Memoir</p>
+                <p><strong>Published :</strong> 1964</p>
+                <p><strong>Publisher :</strong> Scribner</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Oliver White:</strong></p>
+            <p>"Hemingway’s portrayal of Paris in the 1920s is captivating and full of nostalgia."</p>
+        </div>
+        <div class="review">
+            <p><strong>Grace Williams:</strong></p>
+            <p>"A beautifully written memoir that gives readers a glimpse into the life of one of literature’s greats."</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="" alt="">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">Jane Eyre</h1>
+            <p class="book-author">Charlotte Brontë</p>
+            <p class="book-rating">★★★★☆</p>
+            <p class="book-description">Jane Eyre is a coming-of-age story about an orphaned girl who grows up to become an independent and strong-willed woman. The novel follows the life of Jane Eyre, from her difficult childhood under the care of her cruel aunt and harsh boarding school, to her time as a governess at Thornfield Hall. There, she meets the enigmatic and brooding Mr. Rochester, who harbors dark secrets. The novel explores themes of love, morality, social class, and gender equality.
+
+                As Jane's relationship with Mr. Rochester develops, she must confront her own values, self-respect, and the deep moral dilemmas arising from her love for him. The novel is famous for its Gothic atmosphere, psychological depth, and portrayal of a strong, self-respecting woman who defies social expectations.</p>
+            <div class="book-info">
+                <p><strong>Price : ₹250</strong> </p>
+                <p><strong>Genre : Romance,Fiction,Classic literature</strong> </p>
+                <p><strong>Published : 1847</strong> </p>
+                <p><strong>Publisher : Smith, Elder & Co. </strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong></strong></p>
+            <p></p>
+        </div>
+        <div class="review">
+            <p><strong></strong></p>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>

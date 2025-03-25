@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Handmaid's Tale</title>
+    <link rel="stylesheet" href="bookpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src=" https://m.media-amazon.com/images/I/61SpcaD4poL._AC_UF1000,1000_QL80_.jpg"alt="The Handmaid’s Tale">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title"> The Handmaid’s Tale</h1>
+            <p class="book-author">By Margaret Atwood</p>
+            <p class="book-rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+            <p class="book-description">
+                The Handmaid's Tale by Margaret Atwood is a dystopian novel first published in 1985. The story is set in a near-future society called Gilead, which has replaced the United States. In this theocratic and totalitarian regime, women's rights are severely restricted, and they are classified by their roles in society.</p>
+                <div class="book-info">
+                <p><strong>Price : ₹499.00</strong> </p>
+                <p><strong>Genre : Fiction</strong> </p>
+                <p><strong>Published : 1985</strong> </p>
+                <p><strong>Publisher : Houghton Mifflin</strong> </p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>	Shivasish</strong></p>
+            <p>Good print with decent page thickness (not too high transparency) and good solid binding. 300 odd pages but a relatively smaller book size.
+            </p>
+        </div>
+        <div class="review">
+            <p><strong>Ankita Khataniar</strong></p>
+            <p>  am speechless after reading this novel. If i talk about narrative then it's totally different from any other novel and of course it's first person narrative as the protagonist narrates her daily life and what she goes through and why she goes through all that's happening around her.
+            </p>
+            </div>
+    </div>
+</body>
+</html>

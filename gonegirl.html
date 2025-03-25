@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Horror Books
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                background: linear-gradient(to right, #664229, white,#664229);;
+            }
+            .book-grid{
+                display: flex;
+                flex-wrap:wrap ;
+                column-count: 4;
+                padding: 20px;
+                gap: 40px;
+                justify-content: space-between;
+            }
+            .book-card{
+                width: 250px;
+                height: 300px;
+                background-color: #ebe6df;
+                padding: 2rem;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                border-color:#664229;
+                border-width: 10px;     
+            }
+            .book-card img{
+                width: 100px;
+                height: 150px;
+                transform: scale(1.2);
+                transition: 1s;
+    
+            }
+            .book-card img :hover{
+                transform :scale(1.5);
+                transition: 0.5sec;
+            }
+            button{
+                border: solid; 
+                color: #664229;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            button:hover {
+                transform: scale(1.1);
+                transition: 1s;
+    
+            }
+            .book{
+                font-size: xx-large;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 600;
+                color: #664229;
+                text-align: center;
+            }
+    </style>
+    </head>
+    <body>
+        <section id="horror_books"></section>
+<h1 class="book">Horror Books</h1>
+<div class="book-grid">
+    <div class="book-card">
+        <a  href="it.html">  <img src="https://m.media-amazon.com/images/I/613UazqBGHL._AC_UF1000,1000_QL80_.jpg" alt=""></a>
+        <h3>It </h3>
+        <p>By Stephen King</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+       <a href="thehauntingofhillhouse.html">   <img src="https://m.media-amazon.com/images/I/81-PKwy-mPL._AC_UF1000,1000_QL80_.jpg" alt=""></a>
+        <h3>The Haunting of Hill House </h3>
+        <p>By Shirley Jackson</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+       <a href="dracula.html">   <img src=" https://m.media-amazon.com/images/I/91wOUFZCE+L._UF1000,1000_QL80_.jpg " alt=""></a>
+        <h3>Dracula </h3>
+        <p>By Bram Stoker</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="frankenstein.html">  <img src="https://m.media-amazon.com/images/I/81TVqiv-ctL._AC_UF1000,1000_QL80_.jpg " alt=""></a>
+        <h3>Frankenstein</h3>
+        <p> By Mary Shelley</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+       <a href="theshining.html">   <img src="https://m.media-amazon.com/images/I/81CuEX3W9UL._AC_UF1000,1000_QL80_.jpg " alt=""></a>
+        <h3>The Shining </h3>
+        <p>By Stephen King</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp; Wishlist</button>
+    </div>
+    <div class="book-card">
+       <a href="birdbox.html">   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXbs1qCojNNTbGZmNnF6z6GkIjImB0ptJ9g&s" alt=""></a>
+        <h3>Bird Box </h3>
+        <p>By Josh Malerman</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp; Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="petsematary.html">  <img src=" https://m.media-amazon.com/images/I/61qQDfo4CdL._AC_UF1000,1000_QL80_.jpg " alt=""></a>
+        <h3>Pet Sematary</h3>
+        <p> By Stephen King</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a  href="thesilenceofthelambs.html">  <img src="https://m.media-amazon.com/images/I/814fRILnbnL._AC_UF1000,1000_QL80_.jpg " alt=""></a>
+        <h3>The Silence of the Lambs </h3>
+        <p>By Thomas Harris</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp; Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="houseofleaves.html">  <img src="https://m.media-amazon.com/images/I/51BJPS7pN1L._AC_UF1000,1000_QL80_.jpg " alt=""></a>
+        <h3>House of Leaves </h3>
+        <p>By Mark Z. Danielewski</p>
+        <button> <i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+       <a href="thegirlnextdoor.html">   <img src="https://m.media-amazon.com/images/I/61PwDjk-jWL._AC_UF1000,1000_QL80_.jpg" alt=""></a>
+        <h3>The Girl Next Door </h3>
+        <p>By Jack Ketchum</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="theturnofthescrew.html">  <img src="https://m.media-amazon.com/images/I/81YD-VWxpCL._AC_UF1000,1000_QL80_.jpg" alt=""></a>
+        <h3>The Turn of the Screw </h3>
+        <p>By Henry James</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp; Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="theballadofblacktom.html">  <img src="https://images-eu.ssl-images-amazon.com/images/I/71AEUjQUIlL._AC_UL210_SR210,210_.jpg" alt=""></a>
+        <h3> The Ballad of Black Tom  </h3>
+        <p>By Victor LaValle</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="nos4a2.html">  <img src="https://m.media-amazon.com/images/I/91io+1d7OnL._AC_UF1000,1000_QL80_.jpg" alt=""></a>
+        <h3> NOS4A2 </h3>
+        <p> By Joe Hill-</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+        <a href="thecabinattheendoftheworld.html">  <img src="https://m.media-amazon.com/images/I/91nA6q3LGOL._AC_UF1000,1000_QL80_.jpg" alt=""></a>
+        <h3> The Cabin at the End of the World  </h3>"
+        <p>By Paul Tremblay </p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp; Wishlist</button>
+    </div>
+    <div class="book-card">
+       <a href="mexicangothic.html">   <img src="https://m.media-amazon.com/images/I/81Q9jM2ASmL._AC_UF1000,1000_QL80_.jpg " alt=""></a>
+        <h3>Mexican Gothic  </h3>"
+        <p> By Silvia Moreno-Garcia</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+    <div class="book-card">
+       <a href="plop.html">   <img src="https://m.media-amazon.com/images/I/81U6F6IaPzL._SL1500_.jpg" alt=""></a>
+        <h3>Plop </h3>"
+        <p> By Samuel Small</p>
+        <button><i class="fa-regular fa-heart"></i>&nbsp;Wishlist</button>
+    </div>
+</div>
+</section>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Talented Mr. Ripley</title>
+    <link rel="stylesheet" href="bookpage.css">
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/61a6iv9HgYL._AC_UF1000,1000_QL80_.jpg" alt="The Talented Mr. Ripley">
+        </div>
+        <div class="book-details">
+            <h1 class="book-title">The Talented Mr. Ripley</h1>
+            <p class="book-author">By Patricia Highsmith</p>
+            <p class="book-rating">★★★★★</p>
+            <p class="book-description">A psychological thriller about Tom Ripley, a young man with a talent for impersonation and crime, who becomes embroiled in a dangerous scheme.</p>
+            <div class="book-info">
+                <p><strong>Price :</strong> ₹749</p>
+                <p><strong>Genre :</strong> Psychological Thriller, Crime</p>
+                <p><strong>Published :</strong> 1955</p>
+                <p><strong>Publisher : </strong> W.W. Norton & Company</p>
+            </div>
+            <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
+            <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
+            <button class="quantity-btn" id="increase" onclick="updateQuantity(1)">+</button><br>
+            <button class="buy-button"><i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy Now</button><br>
+            <button class="cart-button"><i class="fas fa-shopping-cart"> </i>&nbsp;Add to Cart</button><br>
+            <button class="wishlist-button"><i class="fas fa-heart"> </i>&nbsp; Move to Wishlist</button><br>
+        </div>
+    </div>
+</body>
+</html>
