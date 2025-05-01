@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> One Hundred Years of Solitude</title>
+    <title> IT</title>
     <link rel="stylesheet" href="bookpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -11,19 +11,19 @@
 <body>
     <div class="book-container">
         <div class="book-cover">
-            <img src="https://m.media-amazon.com/images/I/81oAEEwxBWL._AC_UF1000,1000_QL80_.jpg " alt="One Hundred Years of Solitude">
+            <img src="https://m.media-amazon.com/images/I/613UazqBGHL._AC_UF1000,1000_QL80_.jpg" alt="IT">
         </div>
         <div class="book-details">
-            <h1 class="book-title">One Hundred Years of Solitude </h1>
-            <p class="book-author">By Gabriel García Márquez</p>
+            <h1 class="book-title">It</h1>
+            <p class="book-author">By Stephen King</p>
             <p class="book-rating">⭐⭐⭐⭐☆ (4.5/5)</p>
             <p class="book-description">
-                "One Hundred Years of Solitude" by Gabriel García Márquez is a landmark novel in the genre of magical realism. It tells the multi-generational story of the Buendía family, whose patriarch, José Arcadio Buendía, founded the town of Macondo in the heart of the Colombian jungle.</p>
+                "The story begins when a band of seven “uncool” 11-year-olds, led by Bill Denbrough, discovers and battles an evil, shape-changing monster that the children call “It.” The creature attacks every 27 years, taking on a variety of terrifying guises—predominantly that of the clown Pennywise—and committing appalling acts.
                 <div class="book-info">
-                <p><strong>Price : ₹265.00</strong> </p>
-                <p><strong>Genre : Fiction</strong> </p>
-                <p><strong>Published : 1967</strong> </p>
-                <p><strong>Publisher : Harper & Row</strong> </p>
+                <p><strong>Price : ₹1870.00</strong> </p>
+                <p><strong>Genre : Horror</strong> </p>
+                <p><strong>Published : 1986</strong> </p>
+                <p><strong>Publisher : Viking</strong> </p>
             </div>
             <button class="quantity-btn" id="decrease" onclick="updateQuantity(-1)">-</button>
             <input type="number" id="quantity" class="quantity-input" value="1" min="1" readonly>
@@ -38,13 +38,72 @@
         <h2>Reviews</h2>
         <div class="review">
             <p><strong>Ram Sundar</strong></p>
-            <p> A story of entire civilization from the point of view of a family in ‘Macondo’, a fictional village in Caribbean. This was my first experience with any novel on the subject of ‘magical realism’.</p>
+            <p> “A landmark in American literature.”</p>
         </div>
         <div class="review">
             <p><strong>Dharani</strong></p>
-            <p> This book was amazing!! Highly recommend everyone to read it.
-            </p>
+            <p> “It will overwhelm you…Characters so real you feel you are reading about yourself…scenes to be read in a well-lit room only.” </p>
             </div>
     </div>
+    <script>
+        const filter = document.getElementById('count');
+        var counter = 0;
+        function updateQuantity(){
+            counter++;
+            filter.textContent = counter;
+        }
+        function removeQuantity(){
+            counter--;
+            filter.textContent = counter;
+        }
+        
+        
+       
+    const wishlistButtons = document.querySelectorAll('.wishlistButton');
+    
+    wishlistButtons.forEach(button => {
+        const heartIcon = button.querySelector('.heartIcon');
+        
+        button.addEventListener('mouseover', () => {
+            button.classList.add('hovered'); 
+        });
+    
+        button.addEventListener('mouseout', () => {
+            button.classList.remove('hovered'); 
+        });
+    
+        button.addEventListener('mousedown', () => {
+            button.classList.add('pressed'); 
+        });
+    
+        button.addEventListener('mouseup', () => {
+            button.classList.remove('pressed'); 
+            toggleHeart(heartIcon); 
+        });
+    });
+    
+    function toggleHeart(heartIcon) {
+        
+        if (heartIcon.classList.contains('fa-solid')) {
+           
+            heartIcon.classList.remove('fa-solid', 'fa-heart');
+            heartIcon.classList.add('fa-regular', 'fa-heart'); 
+            heartIcon.style.color = ''; 
+        } else {
+            
+            heartIcon.classList.remove('fa-regular', 'fa-heart');
+            heartIcon.classList.add('fa-solid', 'fa-heart'); 
+            heartIcon.style.color = '#ff3366'; 
+        }
+        
+        
+        heartIcon.closest('.wishlistButton').classList.add('clicked'); 
+        setTimeout(() => {
+            heartIcon.closest('.wishlistButton').classList.remove('clicked'); 
+        }, 300); 
+    }
+    
+    
+    </script>
 </body>
 </html>
